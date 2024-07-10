@@ -1,0 +1,15 @@
+.cor-azul {
+    color: blue;
+}
+
+.cor-vermelha {
+    color: red;
+}
+
+.texto-italico {
+    font-style: italic;
+}
+
+.texto-sublinhado {
+    text-decoration: underline;
+}

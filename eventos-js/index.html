@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulação de Eventos</title>
+    <link href="./style/style.css" rel="stylesheet">
     <style>
         form > div {
             margin-bottom: 10px;
@@ -14,6 +15,7 @@
 <body>
     <h1>Manipulação de eventos</h1>
     <h2>Formulários</h2>
+    <div><p>Preencha corretamento o formulário abaixo.</p></div>
     <form>
         <div>
             <div>Operando 1</div>
@@ -25,7 +27,12 @@
         </div>
         <div>
             <div>Operação</div>
-            <div><input type="text" name="operacao"></div>
+            <div>
+                <input type="radio" name="operacao" value="+">+
+                <input type="radio" name="operacao" value="-">-
+                <input type="radio" name="operacao" value="*">*
+                <input type="radio" name="operacao" value="/">/
+            </div>
         </div>
         <!-- <div><button type="button">Calcular</button></div> -->
         <p id="resultado">Resultado: </p>
