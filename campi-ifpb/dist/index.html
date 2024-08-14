@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa dos Campi do IFPB</title>
+    <script type="module" crossorigin src="/assets/index-D7CkTBpI.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DykXJ5dc.css">
+  </head>
+  <body onload="init();">
+    <div id="map" class="z-1"></div>
+    <button
+      type="button"
+      class="btn btn-light position-absolute top-0 end-0 my-2 mx-2 rounded-circle z-3"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      +
+    </button>
+    <!-- <div id="app"></div> -->
+    <!-- Modal direto do Bootstrap -->
+    <!-- Button trigger modal -->    
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Cadastre um novo Campus
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="campus" class="form-label">Campus</label>
+                  <input type="text" class="form-control" id="campus" aria-describedby="campus">
+                </div>
+                <div class="mb-3">
+                  <label for="latLong" class="form-label">Latitude, Longitude</label>
+                  <input type="text" class="form-control" id="latLong">
+                </div>
+                <div class="mb-3">
+                  <label for="descricao" class="form-label">Descrição</label>
+                  <input type="text" class="form-control" id="descricao">
+                </div>                  
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="btnFechar"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+            <button type="button" class="btn btn-primary" onclick="createNewCampus();">Cadastrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
